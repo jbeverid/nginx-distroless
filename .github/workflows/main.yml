@@ -10,7 +10,7 @@ on:
 
 env:
   IMAGE_NAME: jbeveridge/nginx-distroless
-  NGINX_VERSION: 1.27.1
+  NGINX_VERSION: 1.27.2
 
 jobs:
   build:
