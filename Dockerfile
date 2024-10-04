@@ -1,7 +1,7 @@
 # Build stage
 FROM debian:bookworm-slim AS build
 
-ARG NGINX_VERSION=1.27.1
+ARG NGINX_VERSION=1.27.2
 WORKDIR /var/www/nginx-distroless
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
