@@ -77,7 +77,7 @@ RUN ./configure \
 RUN mkdir -p /var/cache/nginx/ /var/lib/nginx /etc/nginx/conf.d/ /usr/share/nginx/html
 
 # Final stage
-FROM gcr.io/distroless/static
+FROM gcr.io/distroless/static@sha256:69830f29ed7545c762777507426a412f97dad3d8d32bae3e74ad3fb6160917ea
 ENV TZ="UTC"
 
 # Copy necessary files from the build stage
