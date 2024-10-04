@@ -77,7 +77,7 @@ RUN ./configure \
 RUN mkdir -p /var/cache/nginx/ /var/lib/nginx /etc/nginx/conf.d/ /usr/share/nginx/html
 
 # Final stage
-FROM gcr.io/distroless/static:latest@sha256:69830f29ed7545c762777507426a412f97dad3d8d32bae3e74ad3fb6160917ea
+FROM gcr.io/distroless/static:latest
 ENV TZ="UTC"
 
 # Copy necessary files from the build stage
@@ -104,6 +104,7 @@ COPY --from=build \
 
 # Copy dynamic linker
 COPY --from=build /lib/*-linux-gnu/ld-linux*.so.* /lib/
+COPY --from=build /lib64/ld-linux-x86-64.so.2 /lib64/
 
 COPY licenses/NGINX_LICENSE /usr/share/licenses/NGINX_LICENSE
 COPY configs/nginx.conf /etc/nginx/nginx.conf
