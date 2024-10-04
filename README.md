@@ -1,5 +1,5 @@
 # NGINX - Distroless
-
+![Build Status](https://github.com/jbeverid/nginx-distroless/actions/workflows/main.yml/badge.svg)
 ![Version](https://img.shields.io/github/v/release/jbeverid/nginx-distroless)
 ![Docker Pulls](https://img.shields.io/docker/pulls/jbeveridge/nginx-distroless)
 ![Docker Image Size](https://img.shields.io/docker/image-size/jbeveridge/nginx-distroless/latest)
