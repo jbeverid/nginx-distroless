@@ -104,7 +104,7 @@ COPY --from=build \
 
 # Copy dynamic linker
 COPY --from=build /lib/*-linux-gnu/ld-linux*.so.* /lib/
-COPY --from=build /lib64/ld-linux-x86-64.so.2 /lib64/
+COPY --from=build /lib64/ld-linux-*.so.* /lib64/
 
 COPY licenses/NGINX_LICENSE /usr/share/licenses/NGINX_LICENSE
 COPY configs/nginx.conf /etc/nginx/nginx.conf
