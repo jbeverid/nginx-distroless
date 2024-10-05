@@ -74,7 +74,7 @@ RUN ./configure \
     && make install
 
 # Create necessary directories
-RUN mkdir -p /var/cache/nginx/ /var/lib/nginx /etc/nginx/conf.d/ /usr/share/nginx/html
+RUN mkdir -p /var/cache/nginx/ /var/lib/nginx /etc/nginx/conf.d/ /usr/share/nginx/html /lib64
 
 # Final stage
 FROM gcr.io/distroless/static:latest
