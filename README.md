@@ -4,10 +4,10 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/jbeveridge/nginx-distroless)
 ![Docker Image Size](https://img.shields.io/docker/image-size/jbeveridge/nginx-distroless/latest)
 
-This repository contains a Dockerfile that builds a lightweight distroless NGINX 1.27.2 image from source, based on the article [Smallest Distroless NGINX Container](https://medium.com/@rockmetoo/smallest-distroless-nginx-container-alpine-c08c3a9cac93). The NGINX build is customized with various modules and optimizations for security and performance.
+This repository contains a Dockerfile that builds a lightweight distroless NGINX 1.27.3 image from source, based on the article [Smallest Distroless NGINX Container](https://medium.com/@rockmetoo/smallest-distroless-nginx-container-alpine-c08c3a9cac93). The NGINX build is customized with various modules and optimizations for security and performance.
 
 ## Table of Contents
-
+~~~~
 - [Why Distroless](#why-distroless)
 - [Features](#features)
 - [Building the Docker Image](#building-the-docker-image)
