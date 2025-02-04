@@ -7,7 +7,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 
 # Install necessary libraries and dependencies to compile nginx
 RUN apt-get update && apt-get install -y \
-    gcc g++ make unzip \
+    build-essential gcc g++ make unzip \
     libaio-dev libc-dev libxslt1-dev libxml2-dev zlib1g-dev \
     libpcre3-dev libbz2-dev libssl-dev autoconf wget \
     lsb-release apt-transport-https ca-certificates
